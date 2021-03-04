@@ -1,0 +1,67 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    logo {
+        file = EXT:bca/Resources/Public/Images/aglogo.png
+        fileInverted = EXT:bca/Resources/Public/Images/aglogo.png
+        height = 188
+        width = 210
+        alt = bca
+        linktitle = bca
+    }
+    favicon {
+        file = EXT:bca/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:bca/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:bca/Resources/Private/Partials/Page/
+        templateRootPath = EXT:bca/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:bca/Resources/Private/Layouts/
+        partialRootPath = EXT:bca/Resources/Private/Partials/
+        templateRootPath = EXT:bca/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:bca/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:bca/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:bca/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+#added by Eduardo Frank on 03/03/2020
+#
+page.logo.file = EXT:bca/Resources/Public/Images/aglogo.png
+page.logo.fileInverted = EXT:bca/Resources/Public/Images/aglogo.png
+page.logo.height = 188
+page.logo.width = 210
+page.logo.alt = BCA
+page.logo.linktitle = BCA
+page.preloader.enable = 0
+page.theme.language.enable = 0
+plugin.bootstrap_package.settings.scss.primary = #455153
+plugin.bootstrap_package.settings.scss.secondary = #013859
+plugin.tx_nsdisquscomments_comment.settings.ShortName = bcanews
+

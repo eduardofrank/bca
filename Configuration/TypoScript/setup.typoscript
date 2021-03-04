@@ -1,0 +1,35 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSS {
+        theme = EXT:bca/Resources/Public/Scss/Theme/theme.scss
+        bca = EXT:bca/Resources/Public/Css/bca.css
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        bca_scripts = EXT:bca/Resources/Public/JavaScript/Dist/scripts.js
+    }
+}
+
+#### FORM CONFIGURATION ###
+plugin.tx_form.settings.yamlConfigurations.100 = EXT:bca/Configuration/Form/FormSetup.yaml
+module.tx_form.settings.yamlConfigurations.100 = EXT:bca/Configuration/Form/FormSetup.yaml

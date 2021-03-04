@@ -1,0 +1,38 @@
+body, .body-bg {
+  display: flex;
+  min-height: 100vh;
+  /* the above declaration is for the sticky footer */
+  flex-direction: column;
+  margin:0;
+  padding:0;
+  background-color:#fff;
+}
+
+@media (min-width: 992px) {
+    .navbar-mainnavigation .navbar-brand-image img {
+        max-height: 100%;
+    }
+}
+
+.powermail_legend {
+    display: none;
+}
+
+.powermail_captchaimage {
+    margin-top: 0.5em;
+}
+
+#c188 h1 {
+    color: #e38109;
+}
+
+/*********************/
+/*** Sticky Footer ***/
+/*********************/
+#page-footer {
+    margin-top: auto;
+}
+
+.footer-copyright {
+    color:#4F5153;
+}
